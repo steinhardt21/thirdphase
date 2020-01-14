@@ -70,43 +70,57 @@ $(".sixth").click(function(){
 /************************* FILTRO *********************************************/
 
 
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  // no transitions
-	transitionDuration: 0.0000000000000000000000000000000000000000000000000000000001
-  // layoutMode: 'fitRows'
+// // init Isotope
+// var $grid = $('.grid').isotope({
+  // itemSelector: '.element-item',
+  // // no transitions
+	// transitionDuration: 0.0000000000000000000000000000000000000000000000000000000001
+  // // layoutMode: 'fitRows'
+// });
+
+// // filter functions
+// var filterFns = {
+  // // show if number is greater than 50
+  // numberGreaterThan50: function() {
+    // var number = $(this).find('.number').text();
+    // return parseInt( number, 10 ) > 50;
+  // },
+  // // show if name ends with -ium
+  // ium: function() {
+    // var name = $(this).find('.name').text();
+    // return name.match( /ium$/ );
+  // }
+// };
+
+// // bind filter button click
+// $('.filters-category-group').on( 'click', 'option', function() {
+  // var filterValue = $( this ).attr('data-filter');
+  // // use filterFn if matches value
+  // filterValue = filterFns[ filterValue ] || filterValue;
+  // $grid.isotope({ filter: filterValue });
+// });
+
+
+
+
+// // bind filter button click
+// $('.filters-category-group').on( 'click', 'div', function() {
+  // var filterValue = $( this ).attr('data-filter');
+  // // use filterFn if matches value
+  // filterValue = filterFns[ filterValue ] || filterValue;
+  // $grid.isotope({ filter: filterValue });
+// });
+
+$(".claim").hide();
+   $(".review").show();
+
+
+$("#bottone_review").on("click", function() {
+   $(".claim").hide();
+   $(".review").show();
 });
 
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
-
-// bind filter button click
-$('.filters-category-group').on( 'click', 'option', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
-});
-
-
-
-
-// bind filter button click
-$('.filters-category-group').on( 'click', 'div', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
+$("#bottone_claim").on("click", function() {
+   $(".review").hide();
+   $(".claim").show();
 });
