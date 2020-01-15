@@ -81,3 +81,10 @@ $("#bottone_claim").on("click", function() {
    $(".review").hide();
    $(".claim").show();
 });
+
+$("#btn_data_type").on("click", function() {
+   $(".review").hide();
+   $(".claim").show();
+   
+});
+

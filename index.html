@@ -10,31 +10,35 @@
 	
 	<!-- My CSS-->
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="glyphone.css" /> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	
+	<!-- Place your kit's code here -->
+    <!-- <script src="https://kit.fontawesome.com/004207a0b1.js" crossorigin="anonymous"></script> -->
+	<script src="https://kit.fontawesome.com/0c652c4dc6.js" crossorigin="anonymous"></script>
     <title>Justified Archive</title>
   </head>
   <body>
     
-	<!-- ****INIZIO**** Area del sito in cui è presente il TITOLO e i BOTTONI e LINGUETTE -->
-	<div class="container-fluid">
+	 <!-- ****INIZIO**** Area del sito in cui è presente il TITOLO e i BOTTONI e LINGUETTE -->
+	 <div class="container-fluid" >
 	
-		<div class="row">
+		<div class="row" style="margin-top: 25px;">
 			<!-- Bottone per vedere REVIEW oppure CLAIM-->
 			<div class="col-2">
 				<div class="dropdown dropdown_button">
-				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; background-color:white;">
-					Dropdown
+				  <button class="btn btn-secondary dropdown-toggle button_border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; background-color:white;">
+					Reviews
 				  </button>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<button class="dropdown-item" id="bottone_review" type="button">Reviews</button>
-					<button class="dropdown-item" id="bottone_claim" type="button">Claims</button>
+					<button class="dropdown-item" id="btn_data_type" type="button" >Claims</button>
 				  </div>
 				</div>
 			</div>		
 					
 			<!-- Bottone ABOUT-->
-			<div class="col-2">
-				<div class="bouton" id="about">About</div>
+			<div class="col-1 offset-9">
+				<div id="btn_about">About</div>
 			</div>
 		</div>
 		
@@ -44,13 +48,14 @@
 				<h1>Justified Archive</h1>
 			</div>
 		</div>
-		
+	</div>
+	 <div class="container-fluid" style="padding-left: 120px;padding-right: 42px;">	
 		<!-- Area del sito in cui ci sono le LIGUETTE per le 6 CATEGORIE-->
-		<div class="Categories row">
+		<div class="categories row m-0">
 				  <!-- 1° Categoria -->
 				  <div class="onglet first onglet_active">
 						<div class="onglet_category">INCREASE POPULARITY</div>
-						<div class="onglet_text text-wrap">Increase popularity  Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life.
+						<div class="onglet_text text-wrap">Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life.
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
@@ -58,7 +63,7 @@
 				  <!-- 2° Categoria -->
 				  <div class="onglet second onglet_inactive">
 						<div class="onglet_category">RESTORE NATURALITY</div>
-						<div class="onglet_text text-wrap">Restore Naturality  The trend of a simple, natural and fresh beauty, has become increasingly important in recent years. Artificial and excessive modifications goes against this trend. These apps guarantees small changes maintaining natural effects. 
+						<div class="onglet_text text-wrap">The trend of a simple, natural and fresh beauty, has become increasingly important in recent years. Artificial and excessive modifications goes against this trend. These apps guarantees small changes maintaining natural effects. 
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
@@ -66,7 +71,7 @@
 				  <!-- 3° Categoria -->
 				  <div class="onglet third onglet_inactive" >
 						<div class="onglet_category">REPLACE WORKOUT</div>
-						<div class="onglet_text">Replace workouts  Get a strong and healthy body in real life is a big challenge that needs effort, patience and constancy. Virtual modification can make people skip this step achieving a perfect figure immediately and virtually.
+						<div class="onglet_text">Get a strong and healthy body in real life is a big challenge that needs effort, patience and constancy. Virtual modification can make people skip this step achieving a perfect figure immediately and virtually.
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
@@ -74,7 +79,7 @@
 				  <!-- 4° Categoria -->
 				  <div class="onglet fourth onglet_inactive" >
 						<div class="onglet_category">ARE EFFORTLESS</div>
-						<div class="onglet_text">Are effortless  In a world that provides ease and speed technologies, use a slowly and complex app is difficult and requires commitment. Body and face modification apps gives great results in a fast way and throght few steps.
+						<div class="onglet_text">In a world that provides ease and speed technologies, use a slowly and complex app is difficult and requires commitment. Body and face modification apps gives great results in a fast way and throght few steps.
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
@@ -82,7 +87,7 @@
 				  <!-- 5° Categoria -->
 				  <div class=" onglet fifth onglet_inactive">
 						<div class="onglet_category">ACHIEVE PERFECTION</div>
-						<div class="onglet_text">Achieve perfection  Even if perfection is a subjective impression, Body and face modification apps support the idea that objective perfection, in the end, exist providing a way to achieve it
+						<div class="onglet_text">Even if perfection is a subjective impression, Body and face modification apps support the idea that objective perfection, in the end, exist providing a way to achieve it
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
@@ -90,429 +95,311 @@
 				  <!-- 6° Categoria -->
 				  <div class=" onglet sixth onglet_inactive">
 						<div class="onglet_category">IMPROVE CREATIVITY</div>
-						<div class="onglet_text">Improve creativy  Express creativity and photography skills is an important feature in the world of social networks. However, is hard to find the time for complex and expensive image editors. These apps are the best way to show skills and creativity in a fast way.
+						<div class="onglet_text">Express creativity and photography skills is an important feature in the world of social networks. However, is hard to find the time for complex and expensive image editors. These apps are the best way to show skills and creativity in a fast way.
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
 			</div>
-	  </div> <!-- ****FINE**** area del sito in cui è presente il TITOLO e i BOTTONI e LINGUETTE -->
-	  
-	  
-	 <!-- ****INIZIO**** area del sito in cui sono presenti le REVIEW e i CLAIM -->
-	 <div class="container-fluid ">		
+		<div class="white_background">
 		
-		 <!-- 1° Categoria: INCREASE POPULARITY -->
+		<div class="white_gap"></div>
+				 <!-- 1° Categoria: INCREASE POPULARITY -->
 		 <div class="first_category" style="display: block;">	
-		      <!-- CLAIM -->
-			  <div class="claim_list">
-					<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo claim">
-								  Category 1.  
+		    <!-- CLAIM -->
+			<div class="claim_list">
+				
+					<div class="row ml-0 mr-0 claim">
+						<div class="col-10 offset-1">
+							<div class="claim_text">
+								The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.
 							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo claim">
-								   1CLAIM Category 1  
-							</div>
-						</div>
-					</div>
-			
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-							   2CLAIM Category 1  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   3CLAIM Category 1  
+							<div class="claim_app">
+								HeroX
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   4CLAIM Category 1  
+					
+					<div class="row ml-0 mr-0 claim">
+						<div class="col-10 offset-1">
+							<div class="claim_text">
+								The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.
 							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   5CLAIM Category 1  
-							</div>
-						</div>
-						
-					</div>
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
+							<div class="claim_app">
+								HeroX
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">
-							<div class="  typo claim">
-								   CLAIM 
-							</div>
-						</div>
-					</div>
-				</div>
+				
+				
+			</div>
 			 <!-- REVIEW -->
 			 <div class="review_list">
-				<div class="row">
+				<div class="row ml-0 mr-0 review_gap review">
 						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
 						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   1REVIEW REVIEW  
-							</div>
+						
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
 						</div>
 				</div>
-				<div class="row">
+				<div class="row ml-0 mr-0 review_gap review">
 						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
 						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
+						
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
 						</div>
 				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   1REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col-6 p-0 m-0">		 
-							<div class="  typo review">
-								  REVIEW.  
-							</div>
-						</div>
-						<div class="col-6 p-0 m-0">	
-							<div class="  typo review">
-								   REVIEW REVIEW  
-							</div>
-						</div>
-				</div>
-		     </div>
+			
+			</div>
 		 </div>
 		
-		 <!-- 2° Categoria: RESTORE NATURALITY -->
+			<!-- 2° Categoria: RESTORE NATURALITY -->
 		 <div class="second_category" style="display: none;">
-			  <div class="claim_list">
-				<div class="  typo claim" data-category="claim">
-					   Category 2 
-				</div>
-				<div class="  typo claim" data-category="claim">  CLAIM Category 2 
-				</div>
-				<div class="  typo claim" data-category="claim">
-					   1CLAIM Category 2  
-				</div>
-				<div class="  typo claim" data-category="claim">
-					   2CLAIM Category 2  
-				</div>
-				<div class="  typo claim" data-category="claim">
-					   3CLAIM Category 2  
-				</div>
+			<div class="claim_list">
+				
 			</div>
-			  <div class="review_list">	
-			<div class="  typo review" data-category="review">
-				   Category 2 
-			</div>
-			<div class="  typo review">  1REVIEW Category 2 
-			</div>
-			<div class="  typo review">
-				   REVIEW Category 2  
-			</div>
-			<div class="  typo review">
-				   REVIEW Category 2  
-			</div>
-			<div class="  typo review">
-				   REVIEW Category 2  
-			</div>
-		 </div>	
+			<div class="review_list">	
+				
+			</div>	
 		 </div>	
 		 
 		 <!-- 3° Categoria: REPLACE WORKOUT -->
 		 <div class="third_category" style="display: none;">
 			<div class="claim_list">
-				<div class="  typo claim">
-					 Category 3.  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 3  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 3  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 3  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 3  
-				</div>
+				
 			</div>
 			<div class="review_list">
-				<div class="  typo review">
-					 Category 3.  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 3  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 3  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 3  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 3  
-				</div>
+				
 			</div>
-		 </div>
+		</div>
+		 
 		 <!-- 4° Categoria: ARE EFFORTLESS -->
 		 <div class="forth_category" style="display: none;">		
 			<div class="claim_list">
-				<div class="  typo claim">
-					  Category 4  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 4  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 4  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 4  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 4  
-				</div>
+				
 			</div>
 			<div class="review_list">
-				<div class="  typo review">
-					  Category 4  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 4  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 4  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 4  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 4  
-				</div>
+				
 			</div>			
 		 </div>
 		 <!-- 5° Categoria: ACHIEVE PERFECTION -->
 		 <div class="fifth_category" style="display: none;">		
 			<div class="claim_list">
-				<div class="  typo claim">
-					  Category 5  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 5  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 5  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 5  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 5  
-				</div>
+				
 			</div>
 			<div class="review_list">
-				<div class="  typo review">
-					  Category 5  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 5  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 5  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 5  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 5  
-				</div>
+				
 			</div>
 		 </div>
 		 <!-- 6° Categoria: IMPROVE CREATIVITY -->
 		 <div class="sixth_category" style="display: none;">		
 			<div class="claim_list">
-				<div class="  typo claim">
-					  Category 6  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 6  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 6  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 6  
-				</div>
-				<div class="  typo claim">
-					   CLAIM Category 6  
-				</div>
+
 			</div>
 			<div class="review_list">
-				<div class="  typo review">
-					  Category 6  
+				<div class="row ml-0 mr-0 review_gap review">
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
+						</div>
+						
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
+						</div>
 				</div>
-				<div class="  typo review">
-					   REVIEW Category 6  
+				<div class="row ml-0 mr-0 review_gap review">
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
+						</div>
+						
+						<div class="col-6 p-0 m-0">		 
+							<!-- <div class="typo "> -->
+								  <div class="row m-0">								  
+										<div class="col-1">
+											 <img src="https://www.w3schools.com/bootstrap4/newyork.jpg" class="rounded-circle image_position" alt="Cinque Terre"> 
+										</div>
+										<div class="col-10 review_dimension">
+											<div class="row m-0 review_username"><b>Kritin Thakur</b></div>
+											<div class="row m-0">
+												<div class="star-rating">
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fas fa-star fa-1 review_star"></i>
+												<i class="fa fa-star-o fa-1 review_star" ></i>
+												  
+												
+												</div>
+											</div>
+											<div class="row ml-0 mr-0 review_text">The game started out fine, but became way too pay to win as time passed. People without Pass Royale are at a huge disadvantage.</div>
+										</div>
+								  </div>  
+							<!-- </div> -->
+						</div>
 				</div>
-				<div class="  typo review">
-					   REVIEW Category 6  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 6  
-				</div>
-				<div class="  typo review">
-					   REVIEW Category 6  
-				</div>
+			
 			</div>
 		 </div>
+		
+		</div>
+		
+	</div>
+	 
+	  
+	
+		
+		 
+		
+		 
    
 
     <!-- JavaScript -->
@@ -523,5 +410,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	
+
+	
    </body>
+
+
 </html>

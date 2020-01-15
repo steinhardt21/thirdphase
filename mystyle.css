@@ -4,24 +4,26 @@
 .onglet {
   position: relative;
   font-size: 15px;
-  width:19%;
+  width:16.6%;
   height:213px;
-  top:-67px;
+  top:-60px;
   /* left:21px; */
   display: inline-block;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 
+
 /*linguetta selezionata*/
 .onglet_active {
   background-color: white;
-  z-index:1;
+  z-index:2;
+  /* left: -12px; */
   text-align: left;
   padding-top:10px;
-  -webkit-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73);
-  -moz-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73);
-  box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73);
+  -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 }
 
 /*linguette NON selezionate*/
@@ -29,20 +31,21 @@
   margin-top: 67px;
   position: relative;
   display: inline-block;
-  width:15%;
+  width:16.6%;
+  /* left: -13px; */
   height:67px;
   top:11px;
   background-color: red;
   border-top-right-radius: 30px;
    border-top-left-radius: 30px; 
   background-color: white;
-  z-index:100;
+  z-index:1;
   text-align: left;
   padding-top:10px;
-  transition:1.2s all;
+  transition:0.8s all;
   cursor: pointer;
-   -webkit-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73);
-  -moz-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73);
+   -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 }
 
 .onglet_inactive .onglet_text {
@@ -56,7 +59,9 @@
 .onglet_inactive:hover {
   top:1px;
   height:65px;
+  /* transition:1.8s all; */
 }
+
 .onglet_shadow {
   background-color: red;
   width:100%;
@@ -91,10 +96,11 @@
 /*contenuto per ogni categoria, cioè riview e claim*/
 .typo {
 position: relative;
-width: 100%;
+	width: 687.6px;
+	height:162px;
 top: -70px;
-
-
+left: 93px;
+/* right: -71px; */
 height:auto;
 border-bottom:1px solid black;
 padding-top:10px;
@@ -105,6 +111,46 @@ transition: all 2s;
 
 z-index:100;
 background-color: white;
+}
+
+.typoClaim {
+	-webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+position: relative;
+width: 92.3%;
+top: -70px;
+left: 77px;
+
+height:auto;
+/* border-left:1px solid black; */
+/* border-right:1px solid black; */
+padding-top:10px;
+/* padding-left:30px; */
+padding-bottom:10px;
+transition: all 2s;
+-webkit-transition: all 2s;
+
+z-index:100;
+background-color: white;
+}
+
+.white_background
+{
+	position: relative;
+background-color:white;
+width: 99.6%;
+height: 900px;
+z-index: 3;
+top: -64px;
+/* left: 60px; */
+/* top: 0; */
+/* left: 92px; */
+/* top: 411.6px; */
+bottom: 0;
+-webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 }
 
 /*bottone ABOUT*/
@@ -142,17 +188,90 @@ background-color: white;
 }
 
 /*bottone per selezionare tra REVIEW e CLAIM cosa vedere*/
-.dropdown_button {
-	/* position: absolute; */
-	left:20px; 
-	 top:20px; 
-	/* width:auto; */
-	/* height:auto; */
-	/* border-radius: 30px; */
-	/* background-color: white; */
-	/* padding:10px; */
-	/* /* cursor: pointer; */ */
-	/* -webkit-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */
-	/* -moz-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */
-	/* box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */
+/* .dropdown_button { */
+	/* /* position: absolute; */ */
+	/* left:20px;  */
+	 /* top:20px;  */
+	/* /* width:auto; */ */
+	/* /* height:auto; */ */
+	/* /* border-radius: 30px; */ */
+	/* /* background-color: white; */ */
+	/* /* padding:10px; */ */
+	/* /* /* cursor: pointer; */ */ */
+	/* /* -webkit-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */ */
+	/* /* -moz-box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */ */
+	/* /* box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.73); */ */
+/* } */
+
+
+/********* Review Google Play ********/
+/* .star-rating { */
+  /* line-height:32px; */
+  /* font-size:1.25em; */
+/* } */
+
+.star-rating .fa-star{color: gray;}
+
+.image_position{
+margin-left: 12px;
+width: 40px;
+height: 40px;
+}
+
+.review_dimension
+{
+	margin-left: 12px;
+}
+
+.white_gap{
+	
+	z-index: 5;
+	position: relative;
+background-color:white;
+width: 100%;
+height: 36px;
+top: -9px;
+}
+
+.review_gap
+{
+	margin-bottom: 52px;
+}
+
+.review_username
+{
+	font-size: 13px;
+}
+
+.review_text
+{
+	font-size: 24px;
+	margin-top: 12px;
+}
+
+.review_star
+{
+	font-size:10px
+}
+
+.claim_text
+{
+	font-size:32px
+}
+
+.claim_app
+{
+	font-size:16px;
+	text-align: right;
+}
+
+.button_border
+{
+	 border-radius: 25px;
+}
+
+#btn_about
+{
+	/* position: relative; */
+	/* top: 26px; */
 }
