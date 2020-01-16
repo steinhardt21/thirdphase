@@ -169,6 +169,10 @@ bottom: 0;
   -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
   box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 }
+.claim
+{
+	margin-bottom: 55px;
+}
 
 /*bottone ABOUT*/
 .bouton {
@@ -280,7 +284,8 @@ top: -9px;
 
 .claim_app
 {
-	font-size:16px;
+	font-size:13px;
+	margin-top: 65px;
 	text-align: right;
 }
 
