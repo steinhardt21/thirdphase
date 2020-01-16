@@ -59,7 +59,7 @@ h1
   z-index:1;
   text-align: left;
   padding-top:10px;
-  /* transition:0.8s all; */
+  transition:0.8s all; 
   cursor: pointer;
    -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
   -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
@@ -76,7 +76,7 @@ h1
 .onglet_inactive:hover {
   /* top:1px; */
   /* height:65px; */
-  /* transition:1.8s all; */
+  transition:1.8s all; 
 }
 
 .onglet_shadow {
@@ -360,7 +360,7 @@ top: -9px;
 	  z-index:1;
 	  text-align: left;
 	  /* padding-top:10px; */
-	  /* transition:0.8s all; */
+	  transition:0.8s all; 
 	  cursor: pointer;
 	   -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 	  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
@@ -370,7 +370,7 @@ top: -9px;
 	.onglet_inactive:hover {
 	  /* top:0px; */
 	  /* height:0px; */
-	  /* transition:1.8s all; */
+	  transition:1.8s all; 
 	}
 	
 	.white_background
