@@ -57,7 +57,7 @@
 		<!-- Area del sito in cui ci sono le LIGUETTE per le 6 CATEGORIE-->
 		<div class="categories row m-0">
 				  <!-- 1° Categoria -->
-				  <div class="onglet first onglet_active">
+				  <div id="page_1 "  onclick="swapDiv(event,this);" class="onglet first onglet_inactive active">
 						<div class="onglet_category">INCREASE POPULARITY</div>
 						<div class="onglet_text text-wrap">Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life.
 						</div>
@@ -65,7 +65,7 @@
 				  </div>
 				  
 				  <!-- 2° Categoria -->
-				  <div class="onglet second onglet_inactive">
+				  <div id="page_2"  onclick="swapDiv(event,this);"  class="onglet second onglet_inactive inactive">
 						<div class="onglet_category">RESTORE NATURALITY</div>
 						<div class="onglet_text text-wrap">The trend of a simple, natural and fresh beauty, has become increasingly important in recent years. Artificial and excessive modifications goes against this trend. These apps guarantees small changes maintaining natural effects. 
 						</div>
@@ -73,7 +73,7 @@
 				  </div>
 				  
 				  <!-- 3° Categoria -->
-				  <div class="onglet third onglet_inactive" >
+				  <div id="page_3"  onclick="swapDiv(event,this);" class="onglet third onglet_inactive inactive" >
 						<div class="onglet_category">REPLACE WORKOUT</div>
 						<div class="onglet_text">Get a strong and healthy body in real life is a big challenge that needs effort, patience and constancy. Virtual modification can make people skip this step achieving a perfect figure immediately and virtually.
 						</div>
@@ -81,7 +81,7 @@
 				  </div>
 				  
 				  <!-- 4° Categoria -->
-				  <div class="onglet fourth onglet_inactive" >
+				  <div id="page_4"  onclick="swapDiv(event,this);" class="onglet fourth onglet_inactive inactive" >
 						<div class="onglet_category">ARE EFFORTLESS</div>
 						<div class="onglet_text">In a world that provides ease and speed technologies, use a slowly and complex app is difficult and requires commitment. Body and face modification apps gives great results in a fast way and throght few steps.
 						</div>
@@ -89,7 +89,7 @@
 				  </div>
 				  
 				  <!-- 5° Categoria -->
-				  <div class=" onglet fifth onglet_inactive">
+				  <div id="page_5"  onclick="swapDiv(event,this);" class=" onglet fifth onglet_inactive inactive">
 						<div class="onglet_category">ACHIEVE PERFECTION</div>
 						<div class="onglet_text">Even if perfection is a subjective impression, Body and face modification apps support the idea that objective perfection, in the end, exist providing a way to achieve it
 						</div>
@@ -97,18 +97,18 @@
 				  </div>
 				  
 				  <!-- 6° Categoria -->
-				  <div class=" onglet sixth onglet_inactive">
+				  <div id="page_6"  onclick="swapDiv(event,this);" class=" onglet sixth onglet_inactive inactive">
 						<div class="onglet_category">IMPROVE CREATIVITY</div>
 						<div class="onglet_text">Express creativity and photography skills is an important feature in the world of social networks. However, is hard to find the time for complex and expensive image editors. These apps are the best way to show skills and creativity in a fast way.
 						</div>
 						<div class="onglet_shadow"></div>
 				  </div>
 			</div>
-		<div class="white_background">
+		<div class="white_background" style="top: 0px;">
 		
 		<div class="white_gap"></div>
 		<!-- 1° Categoria: INCREASE POPULARITY -->
-		 <div class="first_category" style="display: block;">	
+		 <div  class="first_category" style="display: block;">	
 		    <!-- CLAIM -->
 			<div class="claim_list">
 					<div class="row ml-0 mr-0 claim" style="margin-top:25px;">
@@ -979,6 +979,32 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	
+
+	<!-- TESTING -->
+	<!-- <script type="text/javascript"> -->
+
+		<!-- function swapDiv(event,elem){ -->
+			<!-- elem.parentNode.insertBefore(elem,elem.parentNode.firstChild); -->
+		<!-- } -->
+
+		<!-- </script> -->
+
+
+		 <!-- <div id="container"> -->
+				<!-- <div onclick="swapDiv(event,this);">1</div> -->
+				<!-- <div onclick="swapDiv(event,this);">2</div> -->
+				<!-- <div onclick="swapDiv(event,this);">3</div> -->
+		 <!-- </div> -->
+	<!-- TESTING -->
+	
+	<script type="text/javascript">
+
+	function swapDiv(event,elem)
+	{
+		elem.parentNode.insertBefore(elem,elem.parentNode.lastChild);
+	}
+
+	</script>
 
 	
    </body>
