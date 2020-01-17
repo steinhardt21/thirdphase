@@ -57,7 +57,7 @@
 		<!-- Area del sito in cui ci sono le LIGUETTE per le 6 CATEGORIE-->
 		<div class="categories row m-0">
 				  <!-- 1° Categoria -->
-				  <div id="page_1 "  onclick="swapDiv(event,this);" class="onglet first onglet_inactive active">
+				  <div id="page_1"  onclick="swapDiv(event,this);" class="onglet first onglet_inactive active">
 						<div class="onglet_category">INCREASE POPULARITY</div>
 						<div class="onglet_text text-wrap">Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life.
 						</div>
@@ -104,11 +104,11 @@
 						<div class="onglet_shadow"></div>
 				  </div>
 			</div>
-		<div class="white_background" style="top: 0px;">
+		<div id="white_back" class="white_background white_background_down">
 		
 		<div class="white_gap"></div>
 		<!-- 1° Categoria: INCREASE POPULARITY -->
-		 <div  class="first_category" style="display: block;">	
+		 <div id="page_1_content" class="first_category" style="display: block;">	
 		    <!-- CLAIM -->
 			<div class="claim_list">
 					<div class="row ml-0 mr-0 claim" style="margin-top:25px;">
@@ -998,12 +998,15 @@
 	<!-- TESTING -->
 	
 	<script type="text/javascript">
-
-	function swapDiv(event,elem)
-	{
-		elem.parentNode.insertBefore(elem,elem.parentNode.lastChild);
-	}
-
+		
+		function swapDiv(event,elem)
+		{
+			var mq = window.matchMedia( "(max-width: 570px)" );
+			if (mq.matches) {
+				elem.parentNode.insertBefore(elem,elem.parentNode.lastChild);
+			}
+			
+		}
 	</script>
 
 	

@@ -83,7 +83,7 @@ h1
 .onglet_shadow {
   background-color: red;
   width:100%;
-  height:180px;
+  height:235px;
   margin-top:0px;
   -o-linear-gradient(top, #ffffff 0%,#eaeaea 100%);
   background: -ms-linear-gradient(top, #ffffff 0%,#eaeaea 100%);
@@ -160,7 +160,7 @@ background-color:white;
 width: 99.6%;
 height: 900px;
 z-index: 3;
-top: -64px;
+
 /* left: 60px; */
 /* top: 0; */
 /* left: 92px; */
@@ -170,6 +170,19 @@ bottom: 0;
   -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
   box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
 }
+
+.white_background_down
+{
+	top: 20px;
+}
+
+.white_background_top
+{
+	top: -58px;
+}
+
+
+
 .claim
 {
 	margin-bottom: 55px;
@@ -314,7 +327,7 @@ top: -9px;
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width:  1392px) { 
+@media (max-width:  592px) { 
 
 	.bodySpacing
 	{
