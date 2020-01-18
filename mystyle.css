@@ -327,7 +327,7 @@ top: -9px;
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width:  568px) { 
+@media (max-width:  768px) { 
 
 	.bodySpacing
 	{
