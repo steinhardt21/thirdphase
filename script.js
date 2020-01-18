@@ -16,6 +16,13 @@
 // });		
 	
 	
+$(".first_category").css("display","none");
+$(".second_category").css("display","none");
+$(".third_category").css("display","none");
+$(".forth_category").css("display","none");
+$(".fifth_category").css("display","none");
+$(".sixth_category").css("display","none");
+	
 var background = document.getElementById("white_back");
 
 $(".first").click(function(){
