@@ -9,10 +9,11 @@
 body
 {
 	font-family:Inter-SemiBold, sans-serif;
-	font-weight: 400;
+	font-weight: bold;
+	background-color: #EFEFEF;
 }
 
-h1
+nav
 {
 	font-weight: 600;
 }
@@ -92,6 +93,7 @@ h1
 }
 
 .onglet_text {
+	/* font-weight: regular; */
 	line-height: 1.2;
 	font-size: 12px;
   padding-top: 22px;
@@ -308,6 +310,108 @@ top: -9px;
 	 border-radius: 25px;
 }
 
+nav {
+	
+		/* font-family:Inter-SemiBold, sans-serif; */
+		/* font-weight: 400; */
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  /* background-color: #f0f0f0;	 */
+}
+nav span.switcher {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 20px 0;
+  /* box-shadow: 5px 5px 5px #888888;
+
+
+
+  */
+  
+  
+  -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+	  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+	  box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+  
+}
+nav span.switcher input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #000000;
+  outline: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+nav span.switcher input:before, nav span.switcher input:after {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFFFFF;
+}
+nav span.switcher input:before {
+  content: 'CLAIMS';
+  left: 20px;
+}
+nav span.switcher input:after {
+  content: 'REVIEWS';
+  right: 17px;
+}
+nav span.switcher label {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  border-radius: 27px;
+}
+nav span.switcher.switcher-1 input {
+  transition: .25s -.1s;
+}
+nav span.switcher.switcher-1 input:checked {
+  background-color: #FFFFFF;
+}
+nav span.switcher.switcher-1 input:checked:before {
+  color: #FFFFFF;
+  transition: color .5s .2s;
+}
+nav span.switcher.switcher-1 input:checked:after {
+  color: #a8a8a8;
+  transition: color .5s;
+}
+nav span.switcher.switcher-1 input:checked + label {
+  left: 0px;
+  right: 100px;
+  background: #000000;
+  transition: left .5s, right .4s .2s;
+}
+nav span.switcher.switcher-1 input:not(:checked) {
+  background: #000000;
+  transition: background .5s -.1s;
+}
+nav span.switcher.switcher-1 input:not(:checked):before {
+  color: #a8a8a8;
+  transition: color .5s;
+}
+nav span.switcher.switcher-1 input:not(:checked):after {
+  color: #000000;
+  transition: color .5s .2s;
+}
+nav span.switcher.switcher-1 input:not(:checked) + label {
+  left: 100px;
+  right: 0px;
+  background: #FFFFFF;
+  transition: left .4s .2s, right .5s, background .35s -.1s;
+}
 
 
 
@@ -327,7 +431,7 @@ top: -9px;
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width:  768px) { 
+@media (max-width:  968px) { 
 
 	.bodySpacing
 	{

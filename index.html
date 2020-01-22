@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
 	
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="./style.css"> 
+
 	<!-- My CSS-->
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
     <!-- <link rel="stylesheet" type="text/css" href="glyphone.css" /> -->
@@ -22,24 +24,17 @@
     
 	 <!-- ****INIZIO**** Area del sito in cui è presente il TITOLO e i BOTTONI e LINGUETTE -->
 	 <div class="container-fluid" >
+	 
 		<div class="row" style="margin-top: 25px; margin-bottom: 0px;">
 			<!-- Bottone per vedere REVIEW oppure CLAIM-->
 			<div class="col-6 col-md-2">
-				<div class="dropdown dropdown_button">
-				  <button class="btn btn-secondary dropdown-toggle button_border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; background-color:white;">
-					Reviews
-				  </button>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<button class="dropdown-item" id="btn_data_type" type="button" >Claims</button>
-				  </div>
-				</div>
 				
 				<!-- <button id="typo_data" type="button" class="btn btn-light">Light</button> -->
 			</div>		
 				
 			<!-- TITLE-->
 			<div class="col-12 col-md-8 text-center">	
-				<h1>JUSTIFIED ARCHIVE</h1>
+				<h2>JUSTIFIED ARCHIVE</h1>
 				
 			</div>
 			<!-- Bottone ABOUT-->
@@ -47,9 +42,21 @@
 				About
 			</div>
 		</div>
-		<div class="row" style="margin-bottom: 120px;">
+		<div class="row" style="margin-bottom: 41px;">
 			<div class="col-12 col-md-6 offset-md-3 text-center">
 				The archive collects some claims and reviews of Body and Face modification apps on Google Play Store in order to describe our ambigous and current relationship with this kind of apps.
+			</div>
+		</div>
+		
+		<div class="row"  style="margin-bottom: 51px;">
+			<div class="col-6 offset-3">
+				<nav>
+					<span class="switcher switcher-1">
+					   <input type="checkbox" id="switcher-1">
+					   <label for="switcher-1" style="margin-bottom: 0px;"></label>
+					</span>
+					<!-- partial -->
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -59,16 +66,16 @@
 				  <!-- 1° Categoria -->
 				  <div id="page_1"  onclick="swapDiv(event,this);" class="onglet first onglet_inactive active">
 						<div class="onglet_category">INCREASE POPULARITY</div>
-						<!-- <div class="onglet_text text-wrap">Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life. -->
-						<!-- </div> -->
+						 <div class="onglet_text text-wrap">Having a relevant and active social life influence people's perception of yourself. Body and face modification apps promise images that will increase user's popularity on social platforms and consequently in real life. 
+						 </div> 
 						<div class="onglet_shadow"></div>
 				  </div>
 				  
 				  <!-- 2° Categoria -->
 				  <div id="page_2"  onclick="swapDiv(event,this);"  class="onglet second onglet_inactive inactive">
 						<div class="onglet_category">RESTORE NATURALITY</div>
-						<!-- <div class="onglet_text text-wrap">The trend of a simple, natural and fresh beauty, has become increasingly important in recent years. Artificial and excessive modifications goes against this trend. These apps guarantees small changes maintaining natural effects.  -->
-						<!-- </div> -->
+						 <div class="onglet_text text-wrap">The trend of a simple, natural and fresh beauty, has become increasingly important in recent years. Artificial and excessive modifications goes against this trend. These apps guarantees small changes maintaining natural effects.
+						 </div> 
 						<div class="onglet_shadow"></div>
 				  </div>
 				  
@@ -108,7 +115,7 @@
 		
 		<div class="white_gap"></div>
 		<!-- 1° Categoria: INCREASE POPULARITY -->
-		 <div id="page_1_content" class="first_category" style="display: block;">	
+		 <div class="first_category"  id="page_1_content"  style="display: block;">	
 		    <!-- CLAIM -->
 			<div class="claim_list">
 					<div class="row ml-0 mr-0 claim" style="margin-top:25px;">
@@ -1020,54 +1027,60 @@
 				<!-- <div onclick="swapDiv(event,this);">2</div> -->
 				<!-- <div onclick="swapDiv(event,this);">3</div> -->
 		 <!-- </div> -->
-	<!-- TESTING -->
 	
+	<!-- TESTING -->
 	<script type="text/javascript">
+		
 		
 		function swapDiv(event,elem)
 		{
-			var mq = window.matchMedia( "(max-width: 768px)" );
-			if (mq.matches) {
-				elem.parentNode.insertBefore(elem,elem.parentNode.lastChild);
-			}
+		
+		
+		
+			<!-- var mq = window.matchMedia( "(max-width: 968px)" ); -->
+			<!-- if (mq.matches) { -->
+				<!-- elem.parentNode.insertBefore(elem,elem.parentNode.lastChild); -->
+			<!-- } -->
+			
+						
 			
 		}
 	</script>
 	
 	<script>
-		window.onresize = function() {
-			if (window.innerHeight < 768) {
+		<!-- window.onresize = function() { -->
+			<!-- if (window.innerHeight < 968) { -->
 				
-				$(".onglet").addClass("onglet_inactive");
-				$(".onglet").removeClass("onglet_active");
+				<!-- $(".onglet").addClass("onglet_inactive"); -->
+				<!-- $(".onglet").removeClass("onglet_active"); -->
 				
-				$(".first_category").css("display","none");
-				$(".second_category").css("display","none");
-				$(".third_category").css("display","none");
-				$(".forth_category").css("display","none");
-				$(".fifth_category").css("display","none");
-				$(".sixth_category").css("display","none");
+				<!-- $(".first_category").css("display","none"); -->
+				<!-- $(".second_category").css("display","none"); -->
+				<!-- $(".third_category").css("display","none"); -->
+				<!-- $(".forth_category").css("display","none"); -->
+				<!-- $(".fifth_category").css("display","none"); -->
+				<!-- $(".sixth_category").css("display","none"); -->
 				
-			}
-			else
-			{
-				var background = document.getElementById("white_back");
-				background.classList.remove("white_background_top");
-				background.classList.add("white_background_down");			
+			<!-- } -->
+			<!-- else -->
+			<!-- { -->
+				<!-- var background = document.getElementById("white_back"); -->
+				<!-- background.classList.remove("white_background_top"); -->
+				<!-- background.classList.add("white_background_down");			 -->
 			
 				
-				$(".onglet").addClass("onglet_inactive");
-				$(".onglet").removeClass("onglet_active");
+				<!-- $(".onglet").addClass("onglet_inactive"); -->
+				<!-- $(".onglet").removeClass("onglet_active"); -->
 				
-				$(".first_category").css("display","none");
-				$(".second_category").css("display","none");
-				$(".third_category").css("display","none");
-				$(".forth_category").css("display","none");
-				$(".fifth_category").css("display","none");
-				$(".sixth_category").css("display","none");
+				<!-- $(".first_category").css("display","none"); -->
+				<!-- $(".second_category").css("display","none"); -->
+				<!-- $(".third_category").css("display","none"); -->
+				<!-- $(".forth_category").css("display","none"); -->
+				<!-- $(".fifth_category").css("display","none"); -->
+				<!-- $(".sixth_category").css("display","none"); -->
 				
-			}
-		}
+			<!-- } -->
+		<!-- } -->
 	</script>
 	
 	<script>
