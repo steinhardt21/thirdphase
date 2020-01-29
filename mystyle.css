@@ -5,7 +5,10 @@
 	font-family: Inter-SemiBold;
 }
 
-
+.review_right
+{
+	padding-left: 11%;
+}
 
 body
 {
@@ -14,6 +17,16 @@ body
 	background-color: #EFEFEF;
 }
 
+
+a {
+  text-decoration: none;
+color: black;
+}
+
+a:hover {
+  text-decoration: none;
+    color: #7D14ED;
+}
 
 .a_link_process
 {
@@ -33,6 +46,10 @@ body
 	 height: 46px;
 	 font-size:15px;
 	 
+}
+
+.first_review{
+	margin-top:4%;
 }
 
 .white_back_all_closed
@@ -316,8 +333,8 @@ bottom: 0;
 
 .image_position{
 /* margin-left: 12px; */
-width: 40px;
-height: 40px;
+width: 35px;
+height: 35px;
 }
 
 .review_dimension
@@ -480,6 +497,10 @@ nav span.switcher.switcher-1 input:not(:checked) + label {
   transition: left .4s .2s, right .5s, background .35s -.1s;
 }
 
+.btn_space
+{
+	margin-bottom: 51px;
+}
 
 
 .bodySpacing
@@ -499,7 +520,7 @@ nav span.switcher.switcher-1 input:not(:checked) + label {
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width:  968px) { 
+@media (max-width:  568px) { 
 
 	.bodySpacing
 	{
@@ -767,8 +788,125 @@ nav span.switcher.switcher-1 input:not(:checked) + label {
 	
 	.space_back
 	{
-		border-radius:55px;
-		/* padding-bottom: 21px; */
+		border-radius:42px;
+	padding-bottom: 46px; 
 	}
+	
+	.btn_space
+	{
+		margin-bottom: 4%;
+	}
+	
+	
+	nav {
+		
+			/* font-family:Inter-SemiBold, sans-serif; */
+			/* font-weight: 400; */
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  /* background-color: #f0f0f0;	 */
+	}
+	nav span.switcher {
+	  position: relative;
+	  width: 400px;
+	  height: 100px;
+	  border-radius: 50px;
+	  margin: 20px 0;
+	  /* box-shadow: 5px 5px 5px #888888;
+
+
+
+	  */
+	  
+	  
+	  -webkit-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+		  -moz-box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+		  box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.73);
+	  
+	}
+	nav span.switcher input {
+	  -webkit-appearance: none;
+		 -moz-appearance: none;
+			  appearance: none;
+	  position: relative;
+	  width: 400px;
+	  height: 100px;
+	  border-radius: 50px;
+	  background-color: #000000;
+	  outline: none;
+	  font-family: 'Arial', sans-serif;
+	  font-size: 15px;
+	  font-weight: bold;
+	}
+	nav span.switcher input:before, nav span.switcher input:after {
+	  z-index: 2;
+	  position: absolute;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+			  transform: translateY(-50%);
+	  color: #FFFFFF;
+	}
+	nav span.switcher input:before {
+	  content: 'REVIEWS';
+	  left: 41px;
+	  font-size: 31px;
+	}
+	nav span.switcher input:after {
+	  content: 'CLAIMS';
+	  right: 40px;
+	  font-size: 31px;
+	}
+	nav span.switcher label {
+	  z-index: 1;
+	  position: absolute;
+	  bottom: 0px;
+	  top: 0px;
+	  border-radius: 50px;
+	}
+	nav span.switcher.switcher-1 input {
+	  transition: .25s -.1s;
+	}
+	nav span.switcher.switcher-1 input:checked {
+	  background-color: #FFFFFF;
+	}
+	nav span.switcher.switcher-1 input:checked:before {
+	  color: #FFFFFF;
+	  transition: color .5s .2s;
+	}
+	nav span.switcher.switcher-1 input:checked:after {
+	  color: #a8a8a8;
+	  transition: color .5s;
+	}
+	nav span.switcher.switcher-1 input:checked + label {
+	  left: 0px;
+	  right: 180px;
+	  background: #000000;
+	  transition: left .5s, right .4s .2s;
+	}
+	nav span.switcher.switcher-1 input:not(:checked) {
+	  background: #000000;
+	  transition: background .5s -.1s;
+	}
+	nav span.switcher.switcher-1 input:not(:checked):before {
+	  color: #a8a8a8;
+	  transition: color .5s;
+	}
+	nav span.switcher.switcher-1 input:not(:checked):after {
+	  color: #000000;
+	  transition: color .5s .2s;
+	}
+	nav span.switcher.switcher-1 input:not(:checked) + label {
+	  left: 203px;
+	  right: 0px;
+	  background: #FFFFFF;
+	  transition: left .4s .2s, right .5s, background .35s -.1s;
+	}
+
+	.review_right
+	{
+		padding-left: 7%;
+	}
+	
 }
 

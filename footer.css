@@ -850,8 +850,9 @@ footer {
   padding: 3rem calc((100% - var(--container-width)) / 2);
   background-color: var(--color-light);
   color: var(--color-medium); 
-  /* background-color: #5a4298; */
-  
+  background-color: #7d14ed;
+  color: white;
+  padding-top: 9%;
   
   }
 
@@ -870,10 +871,10 @@ footer {
   grid-row: 2; }
 
 .logo-density {
-  width: 70px; }
+  width: 9%; }
 
 .logo-poli {
-  width: 120px; }
+  width: 22%; }
 
 .footer__title {
   margin: 0 0 0.5rem;
