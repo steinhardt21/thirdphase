@@ -5,11 +5,7 @@ $(document).ready(function() {
 
 $(".white_gap").css("display","none");
 
-$(".first_category").css("display","block");
-var linguetta = document.getElementById("page_1");
-var linguettaALL = document.getElementById("linguette");
-
-
+$(".first_category").css("display","none");
 $(".second_category").css("display","none");
 $(".third_category").css("display","none");
 $(".forth_category").css("display","none");
@@ -17,11 +13,6 @@ $(".fifth_category").css("display","none");
 $(".sixth_category").css("display","none");
 	
 var background = document.getElementById("space_back_top");
-
-			
-			background.classList.add("white_back_one_open");
-			background.classList.remove("white_back_all_closed");	
-
 
 
 $(".first").click(function(){
@@ -351,6 +342,7 @@ $("#switcher-1").click(function() {
 
 
 /************************************************************************************/
+
 
 
 
